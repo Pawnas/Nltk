@@ -1,7 +1,8 @@
+import nltk 
+from nltk import FreqDist
+
 def top10():
-	book = input("enter the name of the file ending in .txt: ")
-	import nltk #using imports in a function to make it quicker
-	from nltk import FreqDist
+	book = input("enter the name of the file ending in .txt: ")	
 	fd = FreqDist()
 	open_file = open(book, 'r')
 	file_to_string = open_file.read()
