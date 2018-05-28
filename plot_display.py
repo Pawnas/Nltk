@@ -1,5 +1,6 @@
+import pylab
+
 def display():
-	import pylab
 	word_freqs =
 	nltk.FreqDist(brown.words(categories='news')).most_common()
 	words_by_freq = [w for (w, _) in word_freqs]
