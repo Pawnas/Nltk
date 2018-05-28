@@ -1,9 +1,10 @@
+import nltk
+from nltk.corpus import brown
+from nltk import pos_tag
+from nltk.tokenize import word_tokenize
+from nltk import ne_chunk
+
 def dm_tagger():
-	import nltk
-	from nltk.corpus import brown
-	from nltk import pos_tag
-	from nltk.tokenize import word_tokenize
-	from nltk import ne_chunk
 	brown_tagged_sents = brown.tagged_sents(categories='news')
 	brown_sents = brown.sents(categories='news')
 	size = int(len(brown_tagged_sents) * 0.9)
