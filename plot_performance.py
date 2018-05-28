@@ -1,7 +1,8 @@
+import nltk
+from nltk.corpus import brown
+from random import shuffle
+
 def performance(cfd, wordlist):
-	import nltk
-	from nltk.corpus import brown
-	from random import shuffle
 	brown_tagged_sents = brown.tagged_sents(categories='news')
 	brown_sents = brown.sents(categories='news')
 	size = int(len(brown_tagged_sents) * 0.9)
