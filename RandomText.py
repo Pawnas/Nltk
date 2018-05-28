@@ -1,6 +1,7 @@
+import numpy, random
+
 def randomText():
-	text_file = open('randomtext.txt', 'w')
-	import numpy, random
+	text_file = open('randomtext.txt', 'w')	
 	target_length = 456565
 	random_string = ""
 	while len(random_string) < target_length:
